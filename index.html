@@ -19,6 +19,15 @@
         .card-link:hover {
             text-decoration: none;
         }
+
+        .expandable-img {
+            cursor: pointer;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .expandable-img:hover {
+            opacity: 0.85;
+        }
     </style>
 </head>
 <body>
@@ -42,9 +51,9 @@
         <a href="#" target="_blank" class="card-link">
           <article class="card h-100 custom-card">
             <div class="card-body">
-              <h5 class="card-title">Voice Activated Toaster</h5>
+              <h5 class="card-title">Project One</h5>
               <p class="card-text">
-                A toaster that registers decibel level and toasts bread for a time relative to the recorded decibel. Created as a University assignment with 2 peers.
+                Brief description of your first computing project goes here.
               </p>
             </div>
           </article>
@@ -56,9 +65,9 @@
         <a href="#" target="_blank" class="card-link">
           <article class="card h-100 custom-card">
             <div class="card-body">
-              <h5 class="card-title">C Coded Login System</h5>
+              <h5 class="card-title">Project Two</h5>
               <p class="card-text">
-                A login system created in C that registers and authenticates user logins using a has table. Created solo as a University assignment.
+                Brief description of your second computing project goes here.
               </p>
             </div>
           </article>
@@ -70,9 +79,9 @@
         <a href="#" target="_blank" class="card-link">
           <article class="card h-100 custom-card">
             <div class="card-body">
-              <h5 class="card-title">Chess Playing Bot</h5>
+              <h5 class="card-title">Project Three</h5>
               <p class="card-text">
-                An AI model that competently plays chess against either a user or itself. Created for fun with a group of friends
+                Brief description of your third computing project goes here.
               </p>
             </div>
           </article>
@@ -80,8 +89,37 @@
       </div>
 
     </div>
+
+    <!-- Expandable Bottom Image Section -->
+    <div class="mt-5 text-center">
+      <img src="https://placehold.co/1200x600?text=Click+to+Expand" 
+           alt="Expandable Portfolio Showcase" 
+           class="img-fluid rounded shadow-sm expandable-img" 
+           style="max-height: 300px; object-fit: cover;"
+           data-bs-toggle="modal" 
+           data-bs-target="#fullPageImageModal">
+      <p class="text-muted small mt-2">Click image to view full screen</p>
+    </div>
+
   </div>
 </main>
+
+<!-- Full-Page Image Modal -->
+<div class="modal fade" id="fullPageImageModal" tabindex="-1" aria-labelledby="fullPageImageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-center p-0">
+        <img src="https://placehold.co/1200x600?text=Click+to+Expand" 
+             alt="Full Screen View" 
+             class="img-fluid" 
+             style="max-height: 90vh; max-width: 95vw; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="bg-dark text-white text-center py-3">
   <div class="container">
